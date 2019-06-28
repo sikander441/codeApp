@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>HOMEPAGE </title>
+   <style>
+    h1{
+      font-size: 48px;
+      color: yellow;
+
+    }
+    body{
+      align:center;
+      background-color: skyblue;
+    }
+   </style>
+ </head>
+ <body>
+   <h1>Welcome <%= user %>. Todays problems are </h1>
+   <form id="input-code"  action="/profile" method="POST">
+
+    <textarea rows="20" cols="50" name="code">
+#include<iostream>
+using namespace std;
+int main()
+{
+  //add your code here
+return 0;
+}
+    </textarea><br>
+    <input type="submit" value="submit">
+   </form>
+
+ </body>
+</html>
