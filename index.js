@@ -1,7 +1,14 @@
 var express= require('express');
 var app=express();
 
-var compiler = require('./controllers/compiler')
+app.set('view engine','ejs');
 
-compiler(app);
+var VIEWS=require('./views');
+var crawler=require('./controllers/crawler');
+
+crawler(app);
+VIEWS(app);
+
+
 app.listen(3000);
+console.log('server running now on port 3000');

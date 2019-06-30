@@ -2,8 +2,7 @@
 using namespace std;
 int main()
 {
-  int a,b,c;
-cout<<a<<b<<sc;
+  //add your code hereds
 return 0;
 }
-    
+    dsa
