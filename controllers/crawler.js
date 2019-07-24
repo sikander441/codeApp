@@ -1,10 +1,10 @@
-module.exports=function(app)
+module.exports=function(link,res1)
 {
 
   request=require('request');;
   cheerio=require('cheerio');
   console.log('here');
-  URL='https://www.hackerrank.com/domains/algorithms';
+  URL=link;
   request(URL,function(err,res,body){
     console.log('here');
     if(err){
@@ -13,9 +13,9 @@ module.exports=function(app)
     }
     else {
       $=cheerio.load(body);
-      var data=$('h4').html();
-        console.log(data);
-      
+      var data=$('#page').html();
+      //  console.log(data);
+      res1.send(data);
       }
   });
 };
