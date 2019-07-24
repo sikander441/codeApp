@@ -4,9 +4,9 @@ var app=express();
 app.set('view engine','ejs');
 
 var VIEWS=require('./views');
-var crawler=require('./controllers/crawler');
 
-crawler(app);
+
+//crawler(app);
 VIEWS(app);
 
 
