@@ -16,6 +16,7 @@
  </head>
  <body>
    <h1>Welcome <%= user %>. Todays problems are </h1>
+   <p>Problem Id <%= problem_id %></p>
    <form id="input-code"  action="/compile" method="POST">
 
     <textarea rows="30" cols="80" name="code">
